@@ -1,0 +1,48 @@
+{
+  "name": "starlight-cross-domain-sync",
+  "version": "0.1.0",
+  "description": "Starlight plugin to synchronize dark/light theme preference across subdomains via cookies and BroadcastChannel",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [
+    "starlight",
+    "astro",
+    "dark-mode",
+    "theme",
+    "cross-domain",
+    "cookies",
+    "broadcast-channel"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^3.1.4",
+    "typescript": "^5.8.3",
+    "@astrojs/starlight": "^0.34.0",
+    "astro": "^5.7.13",
+    "jsdom": "^26.1.0"
+  },
+  "peerDependencies": {
+    "@astrojs/starlight": ">=0.20.0",
+    "astro": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@astrojs/starlight": {
+      "optional": false
+    },
+    "astro": {
+      "optional": false
+    }
+  }
+}
