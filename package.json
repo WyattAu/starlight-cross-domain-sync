@@ -1,7 +1,17 @@
 {
-  "name": "starlight-cross-domain-sync",
+  "name": "@wyatt/starlight-cross-domain-sync",
   "version": "0.1.0",
   "description": "Starlight plugin to synchronize dark/light theme preference across subdomains via cookies and BroadcastChannel",
+  "author": "WyattAu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WyattAu/starlight-cross-domain-sync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WyattAu/starlight-cross-domain-sync/issues"
+  },
+  "homepage": "https://github.com/WyattAu/starlight-cross-domain-sync#readme",
   "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
