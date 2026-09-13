@@ -27,15 +27,17 @@ import starlightCrossDomainSync from '@wyatt/starlight-cross-domain-sync';
 export default defineConfig({
   integrations: [
     starlight({
-      plugins: [
-        starlightCrossDomainSync({ domain: 'example.com' }),
-      ],
+      title: 'My Docs',
     }),
+    starlightCrossDomainSync({ domain: 'example.com' }),
   ],
 });
 ```
 
 The cookie is set with `Domain=example.com`, so every subdomain of `example.com` shares the theme. The `domain` option is required.
+
+> `starlightCrossDomainSync()` is an Astro integration, so it belongs in the top-level
+> `integrations` array — not inside `starlight({ plugins: [...] })`.
 
 ## Configuration options
 
